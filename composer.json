@@ -19,6 +19,7 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-gd": "*",
+        "ext-mbstring": "*",
         "php": ">=7.0.0, <=7.2.1"
     },
     "autoload"         : {
