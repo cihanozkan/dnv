@@ -15,14 +15,7 @@
             "homepage": "http://www.erdemarslan.com"
         }
     ],
-    "scripts": {
-  "compile": [
-    "chmod -R 755 cache/",
-    "chmod 755 ham_ilceler/",
-    "chmod 755 ham_sehirler/",
-    "chmod 755 /index.php"
-    ]
-    },
+    
     "require"          : {
         "ext-curl": "*",
         "ext-json": "*"
