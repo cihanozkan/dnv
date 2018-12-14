@@ -15,7 +15,6 @@
             "homepage": "http://www.erdemarslan.com"
         }
     ],
-    
     "require"          : {
         "ext-curl": "*",
         "ext-json": "*"
