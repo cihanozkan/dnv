@@ -155,7 +155,7 @@ Class Namaz {
 
 	// İlçelerin listesini verir! Ülke ve Şehir id verilmesi gerekir.
 	public function ilceler($ulke, $sehir, $cikti = 'array') {
-		
+
 		$sonuc = array(
 			'durum' => 'hata',
 			'veri' => array()
@@ -469,28 +469,28 @@ Class Namaz {
    }
 
    // Miladi tarihi  hicri tarihe çevirir.
-   private function _hicriTarih($tarih, $uzun = false) {
-      if ($tarih === null) $tarih = date('d.m.Y',time());
-      $t = explode('.',$tarih);
-      $bugun = $this->hicriSinif->GeToHijr($t[0], $t[1], $t[2]);
-      $sonuc = "";
-      if($uzun) {
-         $sonuc = $bugun['day'] . ' ' . $this->hicriAylar[$bugun['month']] . ' ' . $bugun['year'];
-      } else {
-
-         $gun = $bugun['day'];
-         $ay = $bugun['month'];
-
-         if($gun < 10) {
-            $gun = "0" . $gun;
-         }
-
-         if($ay < 10) {
-            $ay = "0" . $ay;
-         }
-
-         $sonuc = $gun . '.' . $ay . '.' . $bugun['year'];
-      }
-      return $sonuc;
-   }
+   // private function _hicriTarih($tarih, $uzun = false) {
+   //    if ($tarih === null) $tarih = date('d.m.Y',time());
+   //    $t = explode('.',$tarih);
+   //    $bugun = $this->hicriSinif->GeToHijr($t[0], $t[1], $t[2]);
+   //    $sonuc = "";
+   //    if($uzun) {
+   //       $sonuc = $bugun['day'] . ' ' . $this->hicriAylar[$bugun['month']] . ' ' . $bugun['year'];
+   //    } else {
+	 //
+   //       $gun = $bugun['day'];
+   //       $ay = $bugun['month'];
+	 //
+   //       if($gun < 10) {
+   //          $gun = "0" . $gun;
+   //       }
+	 //
+   //       if($ay < 10) {
+   //          $ay = "0" . $ay;
+   //       }
+	 //
+   //       $sonuc = $gun . '.' . $ay . '.' . $bugun['year'];
+   //    }
+   //    return $sonuc;
+   // }
 }
