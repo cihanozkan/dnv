@@ -103,28 +103,28 @@ class HijriDateTime {
     /**
      * Returns an array of  month, day, year, ln: which is "Islamic lunation number
      * (Births of New Moons)", int: The length of current month.
-     *
-     * @param $day Integer Gregorian day of the month
-     * @param $month Integer Gregorian month number
-     * @param $year Integer Gregorian year in full (1999)
-     * @return Array Hijri date[int month, int day, int year, int ln, int ml]
-     * @see Robert Gent method maker (http://www.phys.uu.nl/~vgent/islam/ummalqura.htm)
-     */
-    public function GeToHijr($day=20, $month=02, $year=1976) {
-        $jd = GregorianToJD($month, $day, $year);
-        $mjd = $jd - 2400000;
-        foreach ($this->jdl as $i => $v)
-            if ($v > ($mjd - 1))
-                break;
-        $iln = $i + 15588; // Islamic lunation number (Births of New Moons)
-        $ii = floor(($i - 1) / 12);
-        $year = 1300 + $ii; // year
-        $month = $i - 12 * $ii; // month
-        $day = $mjd - $this->jdl[$i - 1]; //day
-        $ml = $this->jdl[$i] - $this->jdl[$i - 1]; // Month Length
-        list ($_Date["month"], $_Date["day"], $_Date["year"], $_Date["ln"], $_Date["ml"]) = array($month, $day, $year, $iln, $ml);
-        return ($_Date);
-    }
+    //  *
+    //  * @param $day Integer Gregorian day of the month
+    //  * @param $month Integer Gregorian month number
+    //  * @param $year Integer Gregorian year in full (1999)
+    //  * @return Array Hijri date[int month, int day, int year, int ln, int ml]
+    //  * @see Robert Gent method maker (http://www.phys.uu.nl/~vgent/islam/ummalqura.htm)
+    //  */
+    // public function GeToHijr($day=20, $month=02, $year=1976) {
+    //     $jd = GregorianToJD($month, $day, $year);
+    //     $mjd = $jd - 2400000;
+    //     foreach ($this->jdl as $i => $v)
+    //         if ($v > ($mjd - 1))
+    //             break;
+    //     $iln = $i + 15588; // Islamic lunation number (Births of New Moons)
+    //     $ii = floor(($i - 1) / 12);
+    //     $year = 1300 + $ii; // year
+    //     $month = $i - 12 * $ii; // month
+    //     $day = $mjd - $this->jdl[$i - 1]; //day
+    //     $ml = $this->jdl[$i] - $this->jdl[$i - 1]; // Month Length
+    //     list ($_Date["month"], $_Date["day"], $_Date["year"], $_Date["ln"], $_Date["ml"]) = array($month, $day, $year, $iln, $ml);
+    //     return ($_Date);
+    // }
 
     /**
      * Parse about any English textual datetime description into a Hijri format
