@@ -43,7 +43,7 @@ $namaz = new Namaz();
 	header('Access-Control-Allow-Origin: *');
 	header('Content-type: application/json');
 
-	$vakitler = $namaz->vakitler(13980);
+	$vakit = $namaz->vakitler(13980);
 
 	echo json_encode($vakitler, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
