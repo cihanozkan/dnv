@@ -41,7 +41,7 @@ Class Namaz {
 		9  =>  'Eylül',
 		10  =>  'Ekim',
 		11  =>  'Kasım',
-		12  =>  'Aralık'
+		12  =>  'Aralik'
 		);
 
 	// Haftanın gün isimler. Aynı miladi aylar gibi tercüme edilebilir.
