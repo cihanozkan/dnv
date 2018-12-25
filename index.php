@@ -50,10 +50,7 @@ $cityNumbero = $_GET["cityNumber"];
 	// $vakitler = $namaz->vakit(13980);
 // 1 dag alleen rotterdam
 	// $vakitler = $namaz->vakitler(13980);
-	//daily
-	$vakitler = $namaz->vakit($cityNumbero);
-	//monthly
-	// $vakitler = $namaz->vakitler($cityNumbero);
+	$vakitler = $namaz->vakitler($cityNumbero);
 
 	echo json_encode($vakitler, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
