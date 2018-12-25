@@ -40,12 +40,17 @@ $namaz = new Namaz();
 
 // $vakit = $namaz->vakit(9349);
 
+// $_GET["cityNumber"] = $cityNumber;
+// $_GET["cityNumber"] = $cityNumbero;
+$cityNumbero = $_GET["cityNumber"];
+
 	header('Access-Control-Allow-Origin: *');
 	header('Content-type: application/json');
 	// 1 hele maand rotterdam
 	// $vakitler = $namaz->vakit(13980);
 // 1 dag alleen rotterdam
-	$vakitler = $namaz->vakitler(13980);
+	// $vakitler = $namaz->vakitler(13980);
+	$vakitler = $namaz->vakitler($cityNumbero);
 
 	echo json_encode($vakitler, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
