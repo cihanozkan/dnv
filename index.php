@@ -45,7 +45,7 @@ $namaz = new Namaz();
 	// 1 hele maand rotterdam
 	// $vakitler = $namaz->vakit(13980);
 // 1 dag alleen rotterdam
-	$vakitler = $namaz->vakit(13980);
+	$vakitler = $namaz->vakitler(13980);
 
 	echo json_encode($vakitler, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
