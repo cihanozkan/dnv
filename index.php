@@ -52,7 +52,8 @@ $cityNumbero = $_GET["cityNumber"];
 	// $vakitler = $namaz->vakitler(13980);
 	$vakitler = $namaz->vakitler($cityNumbero);
 
-	echo json_encode($vakitler, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+	echo json_encode($vakitler, JSON_PRETTY_PRINT);
+	//	$json = json_encode($vakitler, JSON_PRETTY_PRINT);
 
 // print_r($ulkeler);
 // print_r($sehirler);
