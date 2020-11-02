@@ -40,7 +40,7 @@ Class Namaz {
 		8  =>  'Ağustos',
 		9  =>  'Eylül',
 		10  =>  'Ekim',
-		11  =>  'Kasim',
+		11  =>  'Kasım',
 		12  =>  'Aralik'
 		);
 
@@ -48,7 +48,7 @@ Class Namaz {
 	public $haftaninGunleri = array(
 		1  => 'Pazartesi',
 		2  => 'Salı',
-		3  => 'Çarşamba',
+		3  => 'Carsamba',
 		4  => 'Perşembe',
 		5  => 'Cuma',
 		6  => 'Cumartesi',
