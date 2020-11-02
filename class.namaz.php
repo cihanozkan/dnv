@@ -48,7 +48,7 @@ Class Namaz {
 	public $haftaninGunleri = array(
 		1  => 'Pazartesi',
 		2  => 'Salı',
-		3  => 'Carsamba',
+		3  => 'Çarşamba',
 		4  => 'Perşembe',
 		5  => 'Cuma',
 		6  => 'Cumartesi',
@@ -406,7 +406,7 @@ Class Namaz {
 
                   $sonuc['vakitler'][$tarih] = array(
                      'tarih' => $tarih,
-                     'tarih_uzun' => $elde,
+//                     'tarih_uzun' => $elde,
                      // 'hicri' => $this->_hicriTarih($tarih),
                      // 'hicri_uzun' => $this->_hicriTarih($tarih, true),
                      'imsak' => '',
