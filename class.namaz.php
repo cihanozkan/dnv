@@ -40,7 +40,7 @@ Class Namaz {
 		8  =>  'Ağustos',
 		9  =>  'Eylül',
 		10  =>  'Ekim',
-		11  =>  'Kasım',
+		11  =>  'Kasim',
 		12  =>  'Aralik'
 		);
 
