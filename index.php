@@ -10,10 +10,10 @@ $namaz = new Namaz();
 //
 //
 // İsteğe bağlı ülke isimleri. Doğrudan dil değişimi yapılabilir!
-// $ulkeIsimleri = array(
-// 	'TURKIYE' => 'Türkiye',
-// 	'ABD' => 'ABD'
-// );
+ $ulkeIsimleri = array(
+ 	'Kasım' => 'Kasim',
+ 	'Çarşamba' => 'Carsamba'
+ );
 //
 // $sehirIsimleri = array(
 // 	'ADANA' => 'Adana',
