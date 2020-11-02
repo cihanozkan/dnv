@@ -402,7 +402,7 @@ Class Namaz {
 
                if($sira == 0) {
                   $tarih = $this->_kisaTarih($elde);
-                  //$tarih = $elde;
+                  $tarih = $elde;
 
                   $sonuc['vakitler'][$tarih] = array(
                      'tarih' => $tarih,
