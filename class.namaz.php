@@ -401,12 +401,12 @@ Class Namaz {
                $elde = trim($td->plaintext);
 
                if($sira == 0) {
-//                  $tarih = $this->_kisaTarih($elde);
-                  $tarih = $elde;
+                  $tarih = $this->_kisaTarih($elde);
+                  //$tarih = $elde;
 
                   $sonuc['vakitler'][$tarih] = array(
                      'tarih' => $tarih,
-                     'tarih_uzun' => $elde,
+//                     'tarih_uzun' => $elde,
                      // 'hicri' => $this->_hicriTarih($tarih),
                      // 'hicri_uzun' => $this->_hicriTarih($tarih, true),
                      'imsak' => '',
@@ -462,7 +462,7 @@ Class Namaz {
       if($aylar[html_entity_decode($parca[1])] > 9) {
          $ay = $aylar[html_entity_decode($parca[1])];
       } else {
-         $ay = "0" . $aylar[html_entity_decode($parca[1])];
+         $ay = "00" . $aylar[html_entity_decode($parca[1])];
       }
 
       return $gun . "." . $ay . "." . $yil;
