@@ -12,7 +12,7 @@ $namaz = new Namaz();
 // İsteğe bağlı ülke isimleri. Doğrudan dil değişimi yapılabilir!
  $ulkeIsimleri = array(
  	'Kasım' => 'Kasim',
- 	'Çarşamba' => 'Carsamba'
+ 	'KasÄ±m' => 'Kasim'
  );
 //
 // $sehirIsimleri = array(
