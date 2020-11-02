@@ -401,12 +401,12 @@ Class Namaz {
                $elde = trim($td->plaintext);
 
                if($sira == 0) {
-                  $tarih = $this->_kisaTarih($elde);
+//                  $tarih = $this->_kisaTarih($elde);
                   $tarih = $elde;
 
                   $sonuc['vakitler'][$tarih] = array(
                      'tarih' => $tarih,
-//                     'tarih_uzun' => $elde,
+                     'tarih_uzun' => $elde,
                      // 'hicri' => $this->_hicriTarih($tarih),
                      // 'hicri_uzun' => $this->_hicriTarih($tarih, true),
                      'imsak' => '',
