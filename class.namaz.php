@@ -115,7 +115,7 @@ Class Namaz {
 		// Veritabanından sadece ülke adlarını ve isimlerini döndür!
 		foreach ($this->veritabani as $ulke_id => $bilgi) {
 			$sonuc['durum'] = 'basarili';
-			$sonuc['veri'][$ulke_id] = array_key_exists($bilgi['ulke_adi'], $this->ulkeIsimleri) ? $this->ulkeIsimleri[$bilgi['ulke_adi']] : $bilgi['ulke_adi'];
+			$sonuc[$ulke_id]['veri'] = array_key_exists($bilgi['ulke_adi'], $this->ulkeIsimleri) ? $this->ulkeIsimleri[$bilgi['ulke_adi']] : $bilgi['ulke_adi'];
 		}
 
 		// fonksiyon dışına aktar!
