@@ -32,7 +32,7 @@ $namaz = new Namaz();
 // $namaz->ilceIsimleri = $ilceIsimleri;
 //
 // // ülkelerin çekilmesi
-// $ulkeler = $namaz->ulkeler();
+ $ulkeler = $namaz->ulkeler();
 
 // $sehirler = $namaz->sehirler(2);
 //
@@ -53,7 +53,7 @@ $cityNumbero = $_GET["cityNumber"];
 	$vakitler = $namaz->vakitler($cityNumbero);
 
 	echo json_encode($vakitler, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
-//	echo json_encode($ulkeler, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+	echo json_encode($ulkeler, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
 // print_r($ulkeler);
 // print_r($sehirler);
