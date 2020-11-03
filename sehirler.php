@@ -43,7 +43,7 @@ $namaz = new Namaz();
 // $_GET["cityNumber"] = $cityNumbero;
 $cityNumbero = $_GET["cityNumber"];
 	
-$sehirler = $namaz->sehirler(cityNumbero);
+$sehirler = $namaz->sehirler($cityNumbero);
 
 header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json');
