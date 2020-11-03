@@ -34,7 +34,7 @@ $namaz = new Namaz();
 // // ülkelerin çekilmesi
 // $ulkeler = $namaz->ulkeler();
 
-// $sehirler = $namaz->sehirler(2);
+ $sehirler = $namaz->sehirler(2);
 //
 // $ilceler = $namaz->ilceler(2, 521);
 
@@ -52,7 +52,8 @@ $cityNumbero = $_GET["cityNumber"];
 	// $vakitler = $namaz->vakitler(13980);
 	$vakitler = $namaz->vakitler($cityNumbero);
 
-	echo json_encode($vakitler, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+//	echo json_encode($vakitler, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+	echo json_encode($sehirler, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
 // print_r($ulkeler);
 // print_r($sehirler);
