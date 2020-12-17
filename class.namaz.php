@@ -455,14 +455,14 @@ Class Namaz {
       $parca = explode(" ", $uzuntarih);
       $aylar = array_flip($this->miladiAylar);
 
-      $ay = "00";
+      $ay = "0";
       $gun = $parca[0];
       $yil = $parca[2];
 
       if($aylar[html_entity_decode($parca[1])] > 9) {
          $ay = $aylar[html_entity_decode($parca[1])];
       } else {
-         $ay = "00" . $aylar[html_entity_decode($parca[1])];
+         $ay = "0" . $aylar[html_entity_decode($parca[1])];
       }
 
       return $gun . "." . $ay . "." . $yil;
