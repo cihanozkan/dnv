@@ -468,7 +468,7 @@ Class Namaz {
       return $gun . "." . $ay . "." . $yil;
    }
 
-    Miladi tarihi  hicri tarihe çevirir.
+//    Miladi tarihi  hicri tarihe çevirir.
     private function _hicriTarih($tarih, $uzun = false) {
        if ($tarih === null) $tarih = date('d.m.Y',time());
        $t = explode('.',$tarih);
