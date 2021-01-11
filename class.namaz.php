@@ -407,8 +407,8 @@ Class Namaz {
                   $sonuc['vakitler'][$tarih] = array(
                      'tarih' => $tarih,
 //                     'tarih_uzun' => $elde,
-                     // 'hicri' => $this->_hicriTarih($tarih),
-                     // 'hicri_uzun' => $this->_hicriTarih($tarih, true),
+                      'hicri' => $this->_hicriTarih($tarih),
+                      'hicri_uzun' => $this->_hicriTarih($tarih, true),
                      'imsak' => '',
                      'gunes' => '',
                      'ogle' => '',
@@ -468,29 +468,29 @@ Class Namaz {
       return $gun . "." . $ay . "." . $yil;
    }
 
-   // Miladi tarihi  hicri tarihe çevirir.
-   // private function _hicriTarih($tarih, $uzun = false) {
-   //    if ($tarih === null) $tarih = date('d.m.Y',time());
-   //    $t = explode('.',$tarih);
-   //    $bugun = $this->hicriSinif->GeToHijr($t[0], $t[1], $t[2]);
-   //    $sonuc = "";
-   //    if($uzun) {
-   //       $sonuc = $bugun['day'] . ' ' . $this->hicriAylar[$bugun['month']] . ' ' . $bugun['year'];
-   //    } else {
-	 //
-   //       $gun = $bugun['day'];
-   //       $ay = $bugun['month'];
-	 //
-   //       if($gun < 10) {
-   //          $gun = "0" . $gun;
-   //       }
-	 //
-   //       if($ay < 10) {
-   //          $ay = "0" . $ay;
-   //       }
-	 //
-   //       $sonuc = $gun . '.' . $ay . '.' . $bugun['year'];
-   //    }
-   //    return $sonuc;
-   // }
+    Miladi tarihi  hicri tarihe çevirir.
+    private function _hicriTarih($tarih, $uzun = false) {
+       if ($tarih === null) $tarih = date('d.m.Y',time());
+       $t = explode('.',$tarih);
+       $bugun = $this->hicriSinif->GeToHijr($t[0], $t[1], $t[2]);
+       $sonuc = "";
+       if($uzun) {
+          $sonuc = $bugun['day'] . ' ' . $this->hicriAylar[$bugun['month']] . ' ' . $bugun['year'];
+       } else {
+	 
+          $gun = $bugun['day'];
+          $ay = $bugun['month'];
+	 
+          if($gun < 10) {
+             $gun = "0" . $gun;
+          }
+	 
+          if($ay < 10) {
+             $ay = "0" . $ay;
+          }
+	 
+          $sonuc = $gun . '.' . $ay . '.' . $bugun['year'];
+       }
+       return $sonuc;
+    }
 }
