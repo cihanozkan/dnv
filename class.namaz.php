@@ -407,8 +407,8 @@ Class Namaz {
                   $sonuc['vakitler'][$tarih] = array(
                      'tarih' => $tarih,
 //                     'tarih_uzun' => $elde,
-                     // 'hicri' => $this->_hicriTarih($tarih),
-                     // 'hicri_uzun' => $this->_hicriTarih($tarih, true),
+                      'hicri' => $this->_hicriTarih($tarih),
+                      'hicri_uzun' => $this->_hicriTarih($tarih, true),
                      'imsak' => '',
                      'gunes' => '',
                      'ogle' => '',
