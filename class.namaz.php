@@ -408,7 +408,7 @@ Class Namaz {
                      'tarih' => $tarih,
 //                     'tarih_uzun' => $elde,
                       'hicri' => $this->_hicriTarih($tarih),
-                      'hicri_uzun' => $this->_hicriTarih($tarih, true),
+//                      'hicri_uzun' => $this->_hicriTarih($tarih, true),
                      'imsak' => '',
                      'gunes' => '',
                      'ogle' => '',
